@@ -1,7 +1,6 @@
 .header
-    background: url('../img/main-screen__bgc.jpg') no-repeat center
+    background: url('../img/main-screen__bgc.jpg') no-repeat center / cover
     padding-top: 38px
-    padding-bottom: 346px
     &-top
         display: flex
         justify-content: space-between
@@ -27,6 +26,7 @@
             margin-bottom: 50px
     &-timer
         display: flex
+        margin-bottom: 218px
         &__item
             text-align: center
             background: $black
@@ -39,3 +39,45 @@
         &__text
             color: $white
             opacity: 0.4
+    .statistic
+        padding: 43px 0
+        background: $black
+        &-content
+            display: flex
+            align-items: center
+            justify-content: space-between
+        &__button
+            color: $white
+            background: linear-gradient(94.78deg, #DF5950 11.19%, #451046 93.72%)
+        &-studs
+            max-width: 251px
+            width: 100%
+            &-block
+                display: flex
+                align-items: center
+                justify-content: space-between
+                &__text
+                    color: $white
+                    opacity: 0.4
+                    margin-bottom: 10px
+        &-earnings
+            max-width: 714px
+            width: 100%
+            &-number
+                display: flex
+                margin-bottom: 8px
+                &__text
+                    color: $white
+                    opacity: 0.4
+                    margin-right: 30px
+            &-bar
+                margin-bottom: 5px
+                height: 6px
+                background: linear-gradient(90deg, rgba(223,89,80,1) 12%, rgba(69,16,70,1) 60%, rgba(255,255,255,1) 60%)
+            &-target
+                display: flex
+                justify-content: space-between
+                color: $white
+                opacity: 0.4
+        .without-margin
+            margin: 0
